@@ -1,0 +1,102 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #e2edff;
+}
+
+#projects {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.btn {
+  border: 1px solid #3498db;
+  background: none;
+  padding: 5px 15px;
+  font-size: 15px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin: 10px;
+  color: #3498db;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background: #3498db;
+  z-index: -1;
+  transition: 0.8s;
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+.btn:hover::before {
+  height: 180%;
+}
+
+#projects .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+#projects .container .card {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+#projects .container .card:hover {
+  height: 420px;
+}
+#projects .container .card .imgBx {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -40px;
+  left: 5px;
+}
+
+#projects .container .card .imgBx img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+#projects .container .card .content {
+  position: relative;
+  margin-top: -40px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  apacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+#projects .container .card:hover .content {
+  visibility: visible;
+  apacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
